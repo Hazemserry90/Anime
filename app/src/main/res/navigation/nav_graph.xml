@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.testing.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_endgameFragment"
+            app:destination="@id/endgameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.example.testing.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/action_gameFragment_to_navbarFragment"
+            app:destination="@id/navbarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/endgameFragment"
+        android:name="com.example.testing.EndgameFragment"
+        android:label="fragment_endgame"
+        tools:layout="@layout/fragment_endgame" >
+        <action
+            android:id="@+id/action_endgameFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navbarFragment"
+        android:name="com.example.testing.NavbarFragment"
+        android:label="fragment_navbar"
+        tools:layout="@layout/fragment_navbar" />
+</navigation>

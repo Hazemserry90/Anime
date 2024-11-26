@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/sword"
+    android:gravity="center"
+    tools:context=".SettingsFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="641dp"
+        android:gravity="top|center"
+        android:text="Settings"
+        android:id="@+id/settings"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        />
+
+
+
+
+</RelativeLayout>
